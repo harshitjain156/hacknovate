@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="hacknovate.css" />
+    </head>
+    <body>
+        <div id="sawo-container" class ="box" style="height: 400px; width: 400px;"></div>
+        <div id="status"></div>
+        <script src="https://websdk.sawolabs.com/sawo.min.js"></script>
+        <script>
+            var config = {
+                containerID: "sawo-container",
+                identifierType: "email", // can be either 'email' or 'phone_number_sms'
+                apiKey: "331707ca-0233-43b2-ae8f-70f4b351b809", // add your api key here
+                onSuccess: (payload) => {
+                    window.location="home2.html"
+                    ;
+                },
+            };
+            var sawo = new Sawo(config);
+            sawo.showForm();
+        </script>
+    </body>
+</html>
