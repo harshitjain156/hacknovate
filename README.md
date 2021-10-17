@@ -1,3 +1,3 @@
 # hacknovate
-please start with the first page
-if login problems comtact me
+please start with the firstpage.html
+if api login problems , then please contact me
